@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Guide</title>
+    <style>
+        body 
+        {
+            background: url("Pics/Home.jpeg");
+            background-size: cover; 
+            font-family: 'Times New Roman';
+        }
+        header 
+        {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+         
+        }
+       ul 
+       {
+            list-style: none;
+            margin: 20px ;
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header div {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        header button {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+      
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        #welcome {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        #welcome img {
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .featured-item, .tips-item, .explore-item {
+            width: 30%;
+            text-align: center;
+        }
+
+        .featured-item img, .tips-item img, .explore-item img {
+            border-radius: 10px;
+            width: 100%;
+            height: 200px; /* Enforces consistent height */
+            object-fit: cover; /* Ensures the images are not distorted */
+        }
+
+        .featured-item h3, .tips-item h3, .explore-item h3 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .featured-item p, .tips-item p, .explore-item p {
+            font-size: 14px;
+        }
+
+        .featured-item a, .tips-item a, .explore-item a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Travel Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="tips.html">Travel Tips</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="register.php"><button>Register</button></a>
+            <a href="sign.php"><button>Sign In</button></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <img src="Pics/Guide.png" alt="Travel Guide" width="300" height="200">
+            <div>
+                <h2>Welcome to the Travel Guide</h2>
+                <p>Our Travel Guide is designed to help you explore the rich heritage, beautiful landscapes, and cultural treasures of South India. Whether you're looking for serene beaches, majestic temples, or vibrant city experiences, we've got you covered. Use our guide to plan your journey and uncover the hidden gems of this incredible region.</p>
+            </div>
+        </section>
+
+        <section id="featured-destinations">
+            <h2 style="text-align: center;">Featured Destinations</h2>
+            <div class="container">
+                <div class="featured-item">
+                    <img src="Pics/Chennai.jpeg" alt="Chennai">
+                    <h3>Chennai</h3>
+                    <p>Experience the vibrant culture and rich history of Chennai, known for its beautiful temples and bustling markets.</p>
+                    <a href="destination.html">Learn More</a>
+                </div>
+                <div class="featured-item">
+                    <img src="Pics/Coimbature.jpeg" alt="Coimbatore">
+                    <h3>Coimbatore</h3>
+                    <p>Explore Coimbatore, a city known for its beautiful temples, parks, and serene landscapes.</p>
+                    <a href="destination.html">Learn More</a>
+                </div>
+                <div class="featured-item">
+                    <img src="Pics/Madurai.jpeg" alt="Madurai">
+                    <h3>Madurai</h3>
+                    <p>Visit Madurai, famous for its ancient Meenakshi Temple and rich cultural heritage.</p>
+                    <a href="destination.html">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="travel-tips">
+            <h2 style="text-align: center;">Travel Tips</h2>
+            <div class="container">
+                <div class="tips-item">
+                    <img src="Pics/Pack.jpeg" alt="Travel Tip 1">
+                    <h3>Packing Essentials</h3>
+                    <p>Make sure to pack light and carry only the essentials to make your travel experience smooth and hassle-free.</p>
+                    <a href="tips.html">Read Tips</a>
+                </div>
+                <div class="tips-item">
+                    <img src="Pics/Local.jpeg" alt="Travel Tip 2">
+                    <h3>Local Cuisine</h3>
+                    <p>Don't miss out on trying local dishes and street food to truly experience the culture of your destination.</p>
+                    <a href="tips.html">Read Tips</a>
+                </div>
+                <div class="tips-item">
+                    <img src="Pics/Weather.jpeg" alt="Travel Tip 3">
+                    <h3>Weather Preparation</h3>
+                    <p>Check the weather forecast for your destination and pack appropriate clothing and accessories.</p>
+                    <a href="tips.html">Read Tips</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="explore-more">
+            <h2 style="text-align: center;">Explore More</h2>
+            <div class="container">
+                <div class="explore-item">
+                    <img src="Pics/Mysore.jpeg" alt="Mysore">
+                    <h3>Mysore</h3>
+                    <p>Discover Mysore, famous for its royal heritage, palaces, and vibrant festivals.</p>
+                    <a href="destination.html">Learn More</a>
+                </div>
+                <div class="explore-item">
+                    <img src="Pics/Hampi.jpeg" alt="Hampi">
+                    <h3>Hampi</h3>
+                    <p>Visit Hampi, a UNESCO World Heritage site known for its ancient temples and stunning ruins.</p>
+                    <a href="destination.html">Learn More</a>
+                </div>
+                <div class="explore-item">
+                    <img src="Pics/Alleppey.jpeg" alt="Alleppey">
+                    <h3>Alleppey</h3>
+                    <p>Relax in Alleppey, known for its serene backwaters, houseboats, and picturesque landscapes.</p>
+                    <a href="destination.html">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
