@@ -105,7 +105,6 @@ if (isset($_POST["n6"]))
     $n3 = $_POST["n3"]; 
     $n4 = $_POST["n4"];  
     $n5 = $_POST["n5"];
-  
     $c = mysqli_connect("localhost", "root", "");
     mysqli_select_db($c, "travel");
     $i = "INSERT INTO book VALUES ('$n1', $n2, '$n3', '$n4', '$n5')";
