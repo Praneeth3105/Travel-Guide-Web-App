@@ -67,13 +67,11 @@
 <body>
 <form method="POST">
     <h2>Booking Information</h2>
-
     <label>Enter your Name:</label>
     <input type="text" required name="n1">
 
     <label>Enter your Mobile No:</label>
     <input type="tel" required name="n2">
-
     <label>Enter your E-mail address:</label>
     <input type="email" required name="n3">
 
